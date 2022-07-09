@@ -7,11 +7,11 @@ print(list)
 index_min = 0
 index_max = 0
 
-for i in list:
+for index, i in enumerate(list):
     if i < list[index_min]:
-        index_min = list.index(i)
+        index_min = index
     if i > list[index_max]:
-        index_max = list.index(i)
+        index_max = index
 
 list[index_min], list[index_max] = list[index_max], list[index_min]
 
